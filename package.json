@@ -1,0 +1,28 @@
+{
+  "name": "voxel-server-test",
+  "description": "websocket tests for voxeljs",
+  "keywords": ["websocket", "websockets", "stream", "streams", "realtime"],
+  "version": "0.0.1",
+  "_npmUser": {
+    "name": "chrisekelley",
+    "email": "chris@vetula.com"
+  },
+  "dependencies": {
+  "websocket-stream": "0.0.4",
+  "hat": "0.0.3",
+  "duplex-emitter": "0.1.8",
+  "mux-demux": "3.4.0"
+  },
+  "devDependencies": {
+    "ws": "0.4.22",
+    "el-streamo": "1.0.0",
+    "ecstatic": "0.1.7"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "start": "browserify index.js >| demo-bundle.js ; node server.js"
+  }
+}
