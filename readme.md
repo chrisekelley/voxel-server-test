@@ -24,6 +24,6 @@ The npm console will display:
 
 The browser will provide additional confirmation.
 
-Much of the code from this demo is extracted from maxogden's wesocket-stream example. 
+Much of the code from this demo is extracted from [maxogden](https://github.com/maxogden)'s [websocket-stream](https://github.com/maxogden/websocket-stream) example. 
 
 BSD LICENSE
