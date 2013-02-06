@@ -12,11 +12,13 @@ Voxel-server is part of the http://voxeljs.com/, an open source voxel game build
 Go to: http://localhost:8080
 
 If successful, the browser js console will display:
+
     Sending test
     Finished sending test
     id 1a3f1f361dc0b44d98c3f5e5798b470e
 
 The npm console will display:
+
     started stream
     received foo: hola
 
