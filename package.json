@@ -2,13 +2,13 @@
   "name": "voxel-server-test",
   "description": "websocket tests for voxeljs",
   "keywords": ["websocket", "websockets", "stream", "streams", "realtime"],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "_npmUser": {
     "name": "chrisekelley",
     "email": "chris@vetula.com"
   },
   "dependencies": {
-  "websocket-stream": "0.0.4",
+  "websocket-stream": "0.0.5",
   "hat": "0.0.3",
   "duplex-emitter": "0.1.8",
   "mux-demux": "3.4.0"
