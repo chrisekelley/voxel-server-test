@@ -11,7 +11,9 @@
   "websocket-stream": "0.0.5",
   "hat": "0.0.3",
   "duplex-emitter": "0.1.8",
-  "mux-demux": "3.4.0"
+  "mux-demux": "3.4.0",
+  "socket.io-client":"0.9.11",
+  "socket.io":"0.9.13"
   },
   "devDependencies": {
     "ws": "0.4.22",
@@ -23,6 +25,6 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "start": "browserify index.js >| demo-bundle.js ; node server.js"
+    "start": "browserify index.js >| demo-bundle.js -d ; node --debug server.js"
   }
 }
