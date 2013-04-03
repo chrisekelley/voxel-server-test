@@ -1,6 +1,4 @@
-/node_modules
-node_modules copy.zip
 
 .idea/workspace.xml
 
-.idea/workspace.xml
+npm-debug.log

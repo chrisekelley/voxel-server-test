@@ -6,8 +6,7 @@ Voxel-server is part of the http://voxeljs.com/, an open source voxel game build
 
 ## Stream version
 
-The stream version of this demo uses websocket-stream and duplex-emiiter, but I ran into an \u0000 error in jsonparse
-when the browser was parsing the server response.
+The stream version of this demo uses websocket-stream and duplex-emiiter.
 
 ## Socket.io version
 
@@ -18,6 +17,13 @@ The socket.io version is index-socket.js and server-socket.js
  Modify package.json to the desired version (s/stream/socket):
 
     "start": "browserify index-stream.js >| demo-bundle.js -d ; node --debug server-stream.js"
+
+## Why did I include the node_modules?
+
+When running the Stream version, I ran into an \u0000 error in jsonparse when the browser was parsing the server response.
+Max Ogden found a solution, which was patched into JSONStream.
+
+More: https://github.com/pgte/duplex-emitter/issues/4#issuecomment-15699928
 
 # setup
 
