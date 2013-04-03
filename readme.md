@@ -4,8 +4,20 @@ Test HTML5 [websockets](https://developer.mozilla.org/en-US/docs/WebSockets) use
 This test does not have any of the webgl code in it so you can test voxel-server in browsers that do not support webgl.
 Voxel-server is part of the http://voxeljs.com/, an open source voxel game building toolkit for modern web browsers .
 
-An earlier version of this demo used websocket-stream and duplex-emiiter, but I ran into an \u0000 error in jsonparse
-when the browser was parsing the server response. I've switched this test to use socket.io for now.
+## Stream version
+
+The stream version of this demo uses websocket-stream and duplex-emiiter, but I ran into an \u0000 error in jsonparse
+when the browser was parsing the server response.
+
+## Socket.io version
+
+The socket.io version is index-socket.js and server-socket.js
+
+## Changing versions
+
+ Modify package.json to the desired version (s/stream/socket):
+
+    "start": "browserify index-stream.js >| demo-bundle.js -d ; node --debug server-stream.js"
 
 # setup
 

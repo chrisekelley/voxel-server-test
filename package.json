@@ -25,6 +25,6 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "start": "browserify index.js >| demo-bundle.js -d ; node --debug server.js"
+    "start": "browserify index-stream.js >| demo-bundle.js -d ; node --debug server-stream.js"
   }
 }
